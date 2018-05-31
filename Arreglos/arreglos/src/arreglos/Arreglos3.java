@@ -20,8 +20,9 @@ public class Arreglos3 {
         double[] calificaciones_progr = {18, 19, 15, 19, 17, 10};
         double[] calificaciones_bd = {10, 12, 13, 20, 17, 20};
         double[] promedios = new double[6];
-        
-        System.out.println("Nomina de promedios de estudiantes");
+
+        System.out.println("            Nomina de promedios de estudiantes\n");
+        System.out.println("\t      Programcion\tBase de datos\tPromedios");
         for (int i = 0; i < calificaciones_bd.length; i++) {
             double suma = calificaciones_progr[i] + calificaciones_bd[i];
             double promedio = suma / 2;
@@ -29,7 +30,8 @@ public class Arreglos3 {
             promedios[i] = promedio;
         }
         for (int i = 0; i < promedios.length; i++) {
-            System.out.println("Promedio de estudiantes " + (i + 1) + " : " + promedios[i]);
+            System.out.println("Estudiante " + (i + 1) + ":   " + calificaciones_progr[i] + " \t\t" + calificaciones_bd[i] + "\t\t" + promedios [i] );
+            
         }
 
     }
