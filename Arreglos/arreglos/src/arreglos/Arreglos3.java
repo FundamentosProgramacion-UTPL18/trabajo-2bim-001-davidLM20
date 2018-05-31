@@ -17,7 +17,7 @@ public class Arreglos3 {
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // TODO code application logic here
-        double[] calificaciones_progr = {18, 19, 15, 19, 17, 10} ;
+        double[] calificaciones_progr = {18, 19, 15, 19, 17, 10};
         double[] calificaciones_bd = {10, 12, 13, 20, 17, 20};
         double[] promedios = new double[6];
 
@@ -28,7 +28,7 @@ public class Arreglos3 {
             promedios[i] = promedio;
         }
         for (int i = 0; i < promedios.length; i++) {
-            System.out.println("Promedio de estudiantes "+(i+1)+ " : " + promedios[i]);
+            System.out.println("Promedio de estudiantes " + (i + 1) + " : " + promedios[i]);
         }
 
     }
