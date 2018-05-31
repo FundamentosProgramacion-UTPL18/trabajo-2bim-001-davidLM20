@@ -17,19 +17,19 @@ public class Arreglos3 {
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // TODO code application logic here
-        int arreglo[] = {1, 2, 3, 4, 5, 6, 7};
-        for (int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i] % 2 == 0) {
-                for (int j = 1; j < 13; j++) {
-                    System.out.println(arreglo[i] + " * " + j + " = " + arreglo[i] * j);
-                }
-                System.out.println("\n");
-            }
+        double[] calificaciones_progr = {18, 19, 15, 19, 17, 10} ;
+        double[] calificaciones_bd = {10, 12, 13, 20, 17, 20};
+        double[] promedios = new double[6];
 
+        for (int i = 0; i < calificaciones_bd.length; i++) {
+            double suma = calificaciones_progr[i] + calificaciones_bd[i];
+            double promedio = suma / 2;
+
+            promedios[i] = promedio;
+        }
+        for (int i = 0; i < promedios.length; i++) {
+            System.out.println("Promedio de estudiantes "+(i+1)+ " : " + promedios[i]);
         }
 
     }
-
-}
-
 }
