@@ -9,7 +9,7 @@ package arreglos;
  *
  * @author jhand
  */
-public class Arreglos2 {
+public class Arreglos3 {
 
     /**
      * @param args the command line arguments
@@ -17,19 +17,19 @@ public class Arreglos2 {
     @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
         // TODO code application logic here
-        int[] arreglo = {1, 2, 3, 4, 5, 6, 7};
-        System.out.println("Tabla de multiplicar de pares");
+        int arreglo[] = {1, 2, 3, 4, 5, 6, 7};
         for (int i = 0; i < arreglo.length; i++) {
             if (arreglo[i] % 2 == 0) {
-                for (int j = i; j < 13; j++) {
-                    
-                    System.out.println(arreglo[i] + " * " + j + " = " + arreglo[i]*j);
+                for (int j = 1; j < 13; j++) {
+                    System.out.println(arreglo[i] + " * " + j + " = " + arreglo[i] * j);
                 }
                 System.out.println("\n");
             }
-         
+
         }
-        
+
     }
+
+}
 
 }
